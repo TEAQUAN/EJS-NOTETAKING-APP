@@ -1,0 +1,19 @@
+
+<body>
+    <main>
+       
+        <form action="/submit" method="POST">
+            <input type="text" name="notes" >
+            <button type="submit">ADD NOTE</button>
+        </form>
+
+        <hr>
+      <ul>
+        <% for (let i = 0; i < locals.plNames.length; i++) { %>
+            <li><%= locals.plNames[i] %></li>
+        <% } %>
+      </ul>
+    </main>
+    <h1> <%= year %> </h1>    
+</body>
+
